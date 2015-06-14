@@ -34,6 +34,9 @@ def collatz_eval (i, j) :
     """
     assert type(i) is int
     assert type(j) is int
+    
+    assert i >=1 and i <= 999999
+    assert j >=1 and j <= 999999
 
     if i > j:
         temp = 0
