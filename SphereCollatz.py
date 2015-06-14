@@ -9,8 +9,10 @@
 # ------------
 # collatz_read
 # ------------
-
 import sys
+
+global cache
+cache = {}
 
 def collatz_read (s) :
     """
@@ -42,17 +44,27 @@ def collatz_eval (i, j) :
 
     assert i <= j
    
+    index = 0
     maxCount = 0 
     count = 1   
      
     for x in range(i, j+1):
+        index = x
         while x > 1:
-            if x%2 == 0:
-                x = x/2
-                count += 1
+            if str(x) in cache:
+                count = count + cache[str(x)] - 1
+                x = 1
             else:
-                x = 3*x + 1
-                count += 1
+                if x%2 == 0:
+                    x = x/2
+                    count += 1
+                else:
+                    x = 3*x + 1
+                    count += 1
+                    
+        if not str(index) in cache:
+            cache[str(index)] = count
+            
         if count >= maxCount:
             maxCount = count
             count = 1
@@ -91,7 +103,6 @@ def collatz_solve (r, w) :
         i, j = collatz_read(s)
         v    = collatz_eval(i, j)
         collatz_print(w, i, j, v)
-        
 #!/usr/bin/env python3
 
 # ------------------------------
