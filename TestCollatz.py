@@ -32,6 +32,18 @@ class TestCollatz (TestCase) :
         self.assertEqual(i,  1)
         self.assertEqual(j, 10)
 
+    def test_read_2 (self) :
+        s    = "0 0\n"
+        i, j = collatz_read(s)
+        self.assertEqual(i,  0)
+        self.assertEqual(j,  0)
+
+    def test_read_3 (self) :
+        s    = "8000 67\n"
+        i, j = collatz_read(s)
+        self.assertEqual(i,  8000)
+        self.assertEqual(j,    67)
+
     # ----
     # eval
     # ----
@@ -52,6 +64,15 @@ class TestCollatz (TestCase) :
         v = collatz_eval(900, 1000)
         self.assertEqual(v, 174)
 
+    def test_eval_5 (self) :
+        v = collatz_eval(2, 2)
+        self.assertEqual(v, 2)
+
+    def test_eval_6 (self) :
+        v = collatz_eval(200, 100)
+        self.assertEqual(v, 125)
+
+
     # -----
     # print
     # -----
@@ -60,6 +81,17 @@ class TestCollatz (TestCase) :
         w = StringIO()
         collatz_print(w, 1, 10, 20)
         self.assertEqual(w.getvalue(), "1 10 20\n")
+
+    def test_print_2 (self) :
+        w = StringIO()
+        collatz_print(w, 100, 200, 0)
+        self.assertEqual(w.getvalue(), "100 200 0\n")
+
+    def test_print_3 (self) :
+        w = StringIO()
+        collatz_print(w, 2, 0, 3)
+        self.assertEqual(w.getvalue(), "2 0 3\n")
+
 
     # -----
     # solve
@@ -70,6 +102,13 @@ class TestCollatz (TestCase) :
         w = StringIO()
         collatz_solve(r, w)
         self.assertEqual(w.getvalue(), "1 10 20\n100 200 125\n201 210 89\n900 1000 174\n")
+
+    def test_solve_2 (self) :
+        r = StringIO("2 2\n200 100\n900 1000\n10 1\n")
+        w = StringIO()
+        collatz_solve(r, w)
+        self.assertEqual(w.getvalue(), "2 2 2\n200 100 125\n900 1000 174\n10 1 20\n")
+
 
 # ----
 # main
