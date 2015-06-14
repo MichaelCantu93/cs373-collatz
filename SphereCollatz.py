@@ -9,6 +9,7 @@
 # ------------
 # collatz_read
 # ------------
+
 import sys
 
 global cache
@@ -56,11 +57,11 @@ def collatz_eval (i, j) :
                 x = 1
             else:
                 if x%2 == 0:
-                    x = x/2
+                    x = x >> 1
                     count += 1
                 else:
-                    x = 3*x + 1
-                    count += 1
+                    x = x + (x >> 1) + 1
+                    count += 2
                     
         if not str(index) in cache:
             cache[str(index)] = count
