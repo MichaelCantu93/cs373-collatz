@@ -53,8 +53,8 @@ def collatz_eval (i, j) :
     for x in range(i, j+1):                          #go through range
         index = x                                    #save number you're working with to store in cache later
         while x > 1:
-            if str(x) in cache:            
-                count = count + cache[str(x)] - 1    #if in cache already, use the current count you have, take the cache value, and minus 1
+            if x in cache:            
+                count = count + cache[x] - 1    #if in cache already, use the current count you have, take the cache value, and minus 1
                 x = 1                                #set to 1 so you exit the loop
             else:
                 if x%2 == 0:                         #if even shift by 1 to do a divide by 2
@@ -64,8 +64,8 @@ def collatz_eval (i, j) :
                     x = x + (x >> 1) + 1             #you know the next number is even
                     count += 2
                     
-        if not str(index) in cache:                  #use index value you saved before (which was the x in the range) and see if in cache
-            cache[str(index)] = count                #if it wasnt, add it now with the cycle length you found
+        if not index in cache:                  #use index value you saved before (which was the x in the range) and see if in cache
+            cache[index] = count                #if it wasnt, add it now with the cycle length you found
             
         if count >= maxCount:                        #set the maxcount if the count you found was higher
             maxCount = count
