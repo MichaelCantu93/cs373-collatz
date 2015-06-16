@@ -1,0 +1,137 @@
+commit ec1c3841b05daf1e6b3d00ddda591583292c767e
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Mon Jun 15 19:30:18 2015 -0500
+
+    updated spherecollatz
+
+commit 336d03762a81c3700ab2146060e4d71a766f2add
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Mon Jun 15 19:27:12 2015 -0500
+
+    removed tmp files
+
+commit c16e55d672ccb16984463230be6ddb74328d2b34
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Mon Jun 15 19:26:32 2015 -0500
+
+    removed tmp files
+
+commit ba98ca63adda87313326f1ae1dccc5228618c8a7
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Mon Jun 15 19:18:47 2015 -0500
+
+    removed strings from dictionary to fix error
+
+commit 6c7ef697150da9e1142021656d5d5261c593f257
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Mon Jun 15 19:16:31 2015 -0500
+
+    removed strings from dictionary to fix error
+
+commit a6c43e391b855d0ca05d9e78c9df5f6186869623
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:37:37 2015 -0500
+
+    last dev commit to add html and log files
+
+commit 28b1f27b2d7041a375ad963b3fcf39433278870d
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:37:01 2015 -0500
+
+    last dev commit to add html and log files
+
+commit 2c2e1fb7621d8ed9611f06ce91be36b0a21c597e
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:30:47 2015 -0500
+
+    updated spherecollatz with new file from collatz.py
+
+commit 24503a43667ab0037bb0a45889345138fc45d32f
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:28:25 2015 -0500
+
+    added all inline comments to my collatz_eval
+
+commit 2b953618f1d939e2ff314e54d415f6255ba1c27c
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:21:08 2015 -0500
+
+    added more asserts to collatz_eval
+
+commit 2c586b5dc17ac706731b6d19758ccdfb784633a2
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:18:55 2015 -0500
+
+    just got sphere to accept dictionary cache
+
+commit 0762f19b5e783b6146f3584288b3391147ea7065
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 18:17:05 2015 -0500
+
+    removed old x/2 and 3x+1 and changed to shifting to save time to pass sphere
+
+commit a10d1d0dc859549999acbbca3e8d3477c0a9543c
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 17:41:21 2015 -0500
+
+    first attempt at simple cache, fixed issue #18
+
+commit adbd3698d4eda400cb86b4d58dab3fa380e80911
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 16:48:15 2015 -0500
+
+    added 100 lines of acceptance tests and fixed issue #16
+
+commit cb0aedb92a1122fcc95a773dd707735efc167f79
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 16:47:37 2015 -0500
+
+    added 100 lines of acceptance tests
+
+commit 973273d7434954fc7abaad907648bfe3782275ae
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 15:03:23 2015 -0500
+
+    submitted code i had to sphere, was accepted, fixed issue #15 and fixed issue #21
+
+commit 63c92c6fe9c46fc6f760900fe03c7df239f3285e
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 14:38:45 2015 -0500
+
+    made collatz_eval in simplest way, fixed issue #17
+
+commit 08ece6f0eff2afbed3c15b49d0561387a1792f64
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 14:06:33 2015 -0500
+
+    added the average of 3 unit texts, fixed issue #13
+
+commit 4129dff3eb552b29276fc4b3d8b1bf5a1fb5381f
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sun Jun 14 13:41:11 2015 -0500
+
+    changed tests, got expected failure, fixed issue #12
+
+commit 505e313b71285c080a316b354085a86a55e04cbe
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sat Jun 13 17:45:29 2015 -0500
+
+    fixed travis.yml file to add sudo: required
+
+commit df25ac2d7a45897f9541e71fc5b45f63e80c61ba
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sat Jun 13 17:43:40 2015 -0500
+
+    fixed makefile eid
+
+commit ff7db9f272b267560789f67db920759fd76ac6eb
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sat Jun 13 17:38:42 2015 -0500
+
+    a new commit and fixed issue #11
+
+commit e57fe68f5096f059ff97f868569e9e085447e141
+Author: Michael Cantu <michaelcantu93@gmail.com>
+Date:   Sat Jun 13 10:53:08 2015 -0500
+
+    first commit
